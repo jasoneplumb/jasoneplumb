@@ -1,6 +1,6 @@
 # Jason Plumb
 
-Systems-performance engineer. Three projects demonstrate embedded determinism, autonomous authorization, and production web systems.
+Systems-performance engineer. The projects below demonstrate embedded determinism, autonomous authorization, production web systems, hardware/firmware, and applied ML.
 
 ## Projects
 
@@ -9,3 +9,7 @@ Systems-performance engineer. Three projects demonstrate embedded determinism, a
 **[exe-auth-ctrl-loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop)** — Cross-model execution-authority control loop integrating OpenAI proposals with Claude execution through deterministic, fail-closed authorization. Research prototype with runnable offline examples and explicit production limitations. [Example code](https://github.com/jasoneplumb/exe-auth-ctrl-loop/blob/mainline/examples/example.py).
 
 **[webmap.dev](https://www.webmap.dev)** — Progressive Web App for GPS navigation and offline map exploration. Mobile-first design with turn-by-turn routing, offline tile caching, and background GPS keepalive. Bundle size ≤103 kB gzipped. [Live app](https://www.webmap.dev).
+
+**[infobento.com](https://github.com/jasoneplumb/infobento.com)** — eInk display showing only the data you want — date, weather forecast, air quality — without unlocking your phone. ESP32-C3 firmware plus TypeScript/Node web backend. [Live site](https://www.infobento.com).
+
+**[FIW](https://github.com/jasoneplumb/FIW)** — Kinship verification from facial images using a Siamese CNN with a pretrained FaceNet backbone (Families in the Wild). PyTorch; AUC-ROC 0.674. [Kaggle competition](https://www.kaggle.com/c/recognizing-faces-in-the-wild).
