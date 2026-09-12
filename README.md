@@ -1,6 +1,6 @@
 # Jason Edward Plumb
 
-I build software that has to answer to the physical world: a safety kernel that rides along on my bike and must replay every ride bit-for-bit, eInk firmware on real silicon, maps that keep working when the signal doesn't. My background is embedded systems, platform firmware, and systems observability ([patents](https://patents.justia.com/inventor/jason-e-plumb)); my current fascination is agentic engineering — in particular, how execution authority is deterministically gated when an AI proposes the action. Portland, OR.
+I build software that has to answer to the physical world: a safety kernel that rides along on my bike and must replay every ride bit-for-bit, eInk firmware on real silicon, maps that keep working when the signal doesn't. My background is embedded systems, platform firmware, and systems observability ([patents](https://patents.justia.com/inventor/jason-e-plumb)); my current fascination is agentic engineering — in particular, how execution authority is deterministically gated when an AI proposes the action.
 
 ## Projects
 
