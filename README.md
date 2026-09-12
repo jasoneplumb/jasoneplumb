@@ -8,7 +8,7 @@ I build software that has to answer to the physical world: a safety kernel that 
 
 **[exe-auth-ctrl-loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop)** — Cross-model execution-authority control loop integrating OpenAI proposals with Claude execution through deterministic, fail-closed authorization. Research prototype with runnable offline examples and explicit production limitations. [Example code](https://github.com/jasoneplumb/exe-auth-ctrl-loop/blob/mainline/examples/example.py).
 
-**[webmap.dev](https://www.webmap.dev)** — Progressive Web App for GPS navigation and offline map exploration. Mobile-first design with turn-by-turn routing, offline tile caching, and background GPS keepalive. Bundle size ≤103 kB gzipped. [Live app](https://www.webmap.dev).
+**[webmap.dev](https://github.com/jasoneplumb/webmap.dev)** — Progressive Web App for GPS navigation and offline map exploration. Mobile-first design with turn-by-turn routing, offline tile caching, and background GPS keepalive. Bundle size ≤103 kB gzipped. [Live app](https://www.webmap.dev).
 
 **[infobento.com](https://github.com/jasoneplumb/infobento.com)** — eInk display showing only the data you want — date, weather forecast, air quality — without unlocking your phone. ESP32-C3 firmware plus TypeScript/Node web backend. [Live site](https://www.infobento.com).
 
