@@ -1,4 +1,4 @@
-# Jason Plumb
+# Jason E. Plumb
 
 **Software Architect · Embedded Systems & Firmware · Performance Engineering**
 
