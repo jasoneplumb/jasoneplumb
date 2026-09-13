@@ -1,6 +1,6 @@
 # Jason E. Plumb
 
-**Software Architect · Embedded Systems & Firmware · Performance Engineering**
+**Embedded Systems & Firmware Architect · Pre-Silicon, Drivers, SDKs · Performance Engineering & Telemetry**
 
 I build embedded systems and the tools that let engineers see what those systems are actually doing. During 26 years at Intel I worked across firmware, device drivers, runtimes, SDKs, and developer tools — production firmware and SDK components for RealSense™ depth cameras, pre-silicon firmware and emulation for Larrabee, and sixteen years of instrumentation and performance analysis. The through-line is turning system behavior into information engineers can act on.
 
