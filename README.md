@@ -41,4 +41,4 @@ Sixteen years of instrumentation and analysis work — Intel ITT scoped tracing 
 
 ---
 
-Based in Portland, Oregon. Open to architecture, embedded systems, firmware, performance engineering, and developer-tool roles — full-time, part-time, or consulting, including remote work nationwide.
+Based in Portland, Oregon; open to relocation to the Bay Area, and to remote or hybrid work. Interested in architecture, embedded systems, firmware, performance engineering, and developer-tool roles — full-time, part-time, or consulting.
