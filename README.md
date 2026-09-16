@@ -22,7 +22,7 @@ My current projects apply that to behavior you can inspect, test, and replay: a 
 
 ### AI systems with explicit execution boundaries
 
-**[exe-auth-ctrl-loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop)**: a research prototype where OpenAI proposes, Claude requests execution, and a host-owned deterministic controller decides: capabilities bound to one proposal digest, one tool, one effect set, one use. `python examples/denials.py` runs offline and shows six requests producing one effect (stale evidence, sparse evidence, an unresolved question, edited arguments, and a replayed capability each refused). Production isolation and durable state are still to be built.
+**[exe-auth-ctrl-loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop)**: a research prototype where OpenAI proposes, Claude requests execution, and a host-owned deterministic controller decides: capabilities bound to one proposal digest, one tool, one effect set, one use. `python examples/denials.py` runs six requests offline; five are refused (stale evidence, sparse evidence, an unresolved question, edited arguments, a replayed capability) and one produces an effect. Production isolation and durable state are still to be built.
 [Problem, demo, and limits](https://github.com/jasoneplumb/exe-auth-ctrl-loop#in-one-minute) · [Disclosure DOI](https://doi.org/10.5281/zenodo.21894658)
 
 ### Product engineering
