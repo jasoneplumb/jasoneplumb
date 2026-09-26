@@ -1,44 +1,52 @@
 # Jason E. Plumb
 
-**Embedded Systems & Firmware Architect · Pre-Silicon, Drivers, SDKs · Performance Engineering & Telemetry**
+**Systems Architect · Agentic Engineering · Embedded Firmware · Observability**
 
-I build embedded systems and the tools that let engineers see what those systems are actually doing. During 26 years at Intel I worked across firmware, device drivers, runtimes, SDKs, and developer tools: production firmware and SDK components for RealSense™ depth cameras, pre-silicon firmware and emulation for Larrabee, and sixteen years of instrumentation and performance analysis. The through-line is turning system behavior into information engineers can act on.
+I build systems where behavior can be inspected, measured, tested, and replayed.
 
-My current projects apply that to behavior you can inspect, test, and replay: a C kernel that must decide identically on a phone, a microcontroller, and in offline replay; deterministic authorization around AI-generated actions; software that keeps working when the network doesn't.
+Across 26 years at Intel, I worked on developer platforms, embedded firmware, spatial computing, computer vision, graphics, performance analysis, and observability. The recurring problem was the same: turn complex system behavior into explicit interfaces and evidence engineers can act on.
 
-[Résumé and contact](https://www.jasoneplumb.com/) · [LinkedIn](https://www.linkedin.com/in/jasoneplumb/) · [Patents](https://patents.justia.com/inventor/jason-e-plumb)
+My current work applies that discipline to agentic engineering: **probabilistic exploration inside deterministic, evidence-bearing boundaries**. Models can explore and implement; tests, replay, hardware behavior, policy, and human review decide what is accepted.
 
-**Where to start:** embedded and performance → [cue](https://github.com/jasoneplumb/cue), then [InfoBento](https://github.com/jasoneplumb/infobento.com) · AI systems → [exe-auth-ctrl-loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop) · shipped product → [webmap.dev](https://github.com/jasoneplumb/webmap.dev) · machine learning → [FIW](https://github.com/jasoneplumb/FIW). I hold my claims to the same standard as my code: every repository states what was measured and how to reproduce it.
+[Website](https://www.jasoneplumb.com/) · [LinkedIn](https://www.linkedin.com/in/jasoneplumb/) · [Resume](https://www.jasoneplumb.com/resume.pdf)
 
 ## Selected work
 
-### Embedded systems and execution consistency
+### [FIW](https://github.com/jasoneplumb/FIW) — measurement-driven machine learning
+Kinship verification using frozen face encoders and a lightweight learned head. Measurement changed the architecture: fine-tuning underperformed the simpler frozen-encoder path. Family-disjoint held-out AUC-ROC: **0.784**.
 
-**[cue](https://github.com/jasoneplumb/cue)**: a deterministic, allocation-free C99 decision kernel compiled into three runtimes (live on iOS, as an MCU actuator, and in offline replay). Across eight instrumented rides, 11,300 shadow-compared steps produced zero divergences, and all 23 recorded traces replay exactly. Early-phase work: it establishes execution consistency, not correctness or safety, and the field results carry the full record, including what failed. Sole author; AI-assisted under replay and hardware-in-the-loop gates.
-[Case study](https://www.jasoneplumb.com/case-studies/cue-equivalence-contract.html) · [Field results](https://github.com/jasoneplumb/cue/blob/mainline/docs/results.md) · [Re-verification](https://github.com/jasoneplumb/cue/blob/mainline/docs/field-reverification.md)
+### [webmap.dev](https://github.com/jasoneplumb/webmap.dev) — offline GPS navigation
+A production TypeScript PWA for trail navigation and map exploration. Cached maps and live GPS position continue without connectivity; search and route calculation use the network. Designed, built, and operated independently.
 
-**[infobento.com](https://github.com/jasoneplumb/infobento.com)**: eInk display firmware plus a TypeScript/Node web service. Firmware is bench-tested on a reTerminal E1001 (ESP32-S3): provisioning, conditional refresh, deep sleep, dual-orientation caching, recovery, factory reset. The production ESP32-C3 port and the solar power budget are still design targets.
-[Bench results](https://github.com/jasoneplumb/infobento.com/blob/mainline/firmware/README.md)
+### [Execution Authority Control Loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop) — controlled execution for AI agents
+A fail-closed research prototype that separates model proposals from authority to create effects. A host-owned deterministic controller applies policy and issues narrowly scoped, single-use capabilities through the only execution gateway. [Paper / DOI](https://doi.org/10.5281/zenodo.21894658).
 
-### AI systems with explicit execution boundaries
+### [cue](https://github.com/jasoneplumb/cue) — deterministic embedded decision making
+One allocation-free C99 decision kernel runs live on a phone, on microcontroller targets, and in offline replay. The current field corpus records **11,300 shadow-compared steps with zero divergences**, with **23/23 traces replaying exactly**. Agreement demonstrates execution consistency, not correctness or safety.
 
-**[exe-auth-ctrl-loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop)**: a research prototype where OpenAI proposes, Claude requests execution, and a host-owned deterministic controller decides: capabilities bound to one proposal digest, one tool, one effect set, one use. `python examples/denials.py` runs six requests offline; five are refused (stale evidence, sparse evidence, an unresolved question, edited arguments, a replayed capability) and one produces an effect. Production isolation and durable state are still to be built.
-[Problem, demo, and limits](https://github.com/jasoneplumb/exe-auth-ctrl-loop#in-one-minute) · [Disclosure DOI](https://doi.org/10.5281/zenodo.21894658)
+## Additional public engineering artifacts
 
-### Product engineering
+### [cyclescope](https://github.com/jasoneplumb/cyclescope)
+Lightweight C++20 scope/function tracing with per-thread bounded buffers and Perfetto-compatible output. CI includes ThreadSanitizer coverage.
 
-**[webmap.dev](https://github.com/jasoneplumb/webmap.dev)**: a TypeScript PWA for GPS navigation and offline map exploration, live and in use. Cached maps and position work without connectivity; search and routing need the network. Main JS chunk measures 126.39 kB gzipped at v0.50.0 against a 150 kB CI-enforced budget. Designed, built, and operated solo.
-[Live app](https://www.webmap.dev) · [Architecture](https://github.com/jasoneplumb/webmap.dev/blob/mainline/docs/architecture.md)
+### [taskloom](https://github.com/jasoneplumb/taskloom)
+Header-only C++20 concurrency building blocks centered on a Chase-Lev work-stealing deque, with explicit memory-ordering contracts and concurrency testing.
 
-### Measurement-driven machine learning
+## Earlier systems work
 
-**[FIW](https://github.com/jasoneplumb/FIW)**: kinship verification on Families in the Wild. Three frozen face encoders rank-blended by a 6,145-parameter linear head, adopted after measurement showed fine-tuning scored *below* the unmodified encoder zero-shot. AUC-ROC 0.784 on a 23,776-pair family-disjoint held-out split.
-[Methods and results](https://github.com/jasoneplumb/FIW/blob/mainline/README.md)
+At Intel, I worked across:
 
-### Performance engineering (Intel)
+- performance analysis and observability, including timeline visualization, tracing, sampling, compiler-assisted instrumentation, ETW, symbolic stacks, DXR, and GPU memory analysis;
+- RealSense firmware, SDK/API design, sensor pipelines, IMU capability, and 3D scanning workflows;
+- pre-silicon firmware, emulation, SDKs, host/device messaging, lock-free scheduling, and OpenCL simulation for Larrabee;
+- early camera-driven spatial-computing architectures, Shockwave 3D, and technology standardized as ECMA-363 Universal 3D.
 
-Sixteen years of instrumentation and analysis work: Intel ITT scoped tracing and RAII wrappers, compiler-inserted `_penter`/`_pexit` hooks that reconstruct call graphs without touching user code, ETW kernel-event capture, DXR test harnesses, and steady-state frame partitioning for D3D12/Vulkan captures. The code and measurements are Intel's; [this case study](https://www.jasoneplumb.com/case-studies/compiler-automated-instrumentation.html) explains the approach and points at the public pieces.
+I hold eight US patents across six inventions, including **Portable Virtual Reality (US 7,113,618)**, **Augmented Reality System (US 7,301,547)**, and **Relational Modeling for Performance Analysis of Multi-Core Processors (US 8,826,234)**.
 
----
+## How I work
 
-Based in Portland, Oregon; open to relocation to the Bay Area, and to remote or hybrid work. Interested in architecture, embedded systems, firmware, performance engineering, and developer-tool roles (full-time, part-time, or consulting).
+**Intent → artifacts → exploration → verification → authority → evidence**
+
+The repositories are the deepest public surface of the profile. Claims should be inspectable here: architecture, source, tests, CI, measurements, limitations, provenance, and reproduction instructions. Where the underlying work is private or belongs to Intel, I describe the architecture without implying that unavailable evidence is public.
+
+Based in Portland, Oregon and Berkeley, California.
