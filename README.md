@@ -45,8 +45,17 @@ I hold eight US patents across six inventions, including **Portable Virtual Real
 
 ## How I work
 
-**Intent → artifacts → exploration → verification → authority → evidence**
+Intent before implementation
 
-The repositories are the deepest public surface of the profile. Claims should be inspectable here: architecture, source, tests, CI, measurements, limitations, provenance, and reproduction instructions. Where the underlying work is private or belongs to Intel, I describe the architecture without implying that unavailable evidence is public.
+Use structured design conversations to turn an initial idea into explicit requirements and durable design artifacts before implementation begins.
+Artifacts as interfaces
+
+Separate design, implementation, and verification contexts with versioned artifacts rather than depending on conversational memory or implicit model state.
+Probabilistic implementation, deterministic verification
+
+Let AI explore broadly and implement quickly, but establish acceptance independently through tests, simulation, deterministic replay, hardware-in-the-loop validation, CI, and human review.
+Capability without implicit authority
+
+Separate what a model can propose from what it is allowed to execute. Consequential effects cross explicit policy and control boundaries.
 
 Based in Portland, Oregon and Berkeley, California.
