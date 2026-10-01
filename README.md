@@ -61,4 +61,3 @@ Let AI explore broadly and implement quickly, but establish acceptance independe
 
 Separate what a model can propose from what it is allowed to execute. Consequential effects cross explicit policy and control boundaries.
 
-## Based in Portland, Oregon and Berkeley, California.
