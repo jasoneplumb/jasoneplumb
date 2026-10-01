@@ -45,19 +45,19 @@ I hold eight US patents across six inventions, including **Portable Virtual Real
 
 ## How I work
 
-Intent before implementation
+### Intent before implementation
 
 Use structured design conversations to turn an initial idea into explicit requirements and durable design artifacts before implementation begins.
 
-Artifacts as interfaces
+### Artifacts as interfaces
 
 Separate design, implementation, and verification contexts with versioned artifacts rather than depending on conversational memory or implicit model state.
 
-Probabilistic implementation, deterministic verification
+### Probabilistic implementation, deterministic verification
 
 Let AI explore broadly and implement quickly, but establish acceptance independently through tests, simulation, deterministic replay, hardware-in-the-loop validation, CI, and human review.
 
-Capability without implicit authority
+### Capability without implicit authority
 
 Separate what a model can propose from what it is allowed to execute. Consequential effects cross explicit policy and control boundaries.
 
