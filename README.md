@@ -34,10 +34,10 @@ Deterministic host-owned control for AI-initiated effects, with policy applied o
 
 At Intel, I worked across:
 
-- performance analysis and observability: timeline visualization, tracing, sampling, compiler-assisted instrumentation, ETW, symbolic stacks, DXR, and GPU memory analysis;
-- RealSense firmware, SDK/API design, sensor pipelines, IMU capability, and 3D scanning workflows;
-- pre-silicon firmware, emulation, SDKs, host/device messaging, lock-free scheduling, and OpenCL simulation for Larrabee;
-- camera-driven spatial computing, 3D graphics, and technology standardized as ECMA-363 Universal 3D.
+- Performance analysis and observability: timeline visualization, tracing, sampling, compiler-assisted instrumentation, ETW, symbolic stacks, DXR, and GPU memory analysis
+- RealSense firmware, SDK/API design, sensor pipelines, IMU capability, and 3D scanning workflows
+- Pre-silicon firmware, emulation, SDKs, host/device messaging, lock-free scheduling, and OpenCL simulation for Larrabee
+- Camera-driven spatial computing, 3D graphics, and technology standardized as ECMA-363 Universal 3D
 
 I hold eight US patents across six inventions, including **Portable Virtual Reality (US 7,113,618)**, **Augmented Reality System (US 7,301,547)**, and **Relational Modeling for Performance Analysis of Multi-Core Processors (US 8,826,234)**.
 
