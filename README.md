@@ -6,7 +6,7 @@ I work on performance-sensitive systems where the useful question is not just *i
 
 Across 26 years at Intel, I worked on GPU performance tooling, low-overhead instrumentation, developer platforms, embedded and sensor systems, pre-silicon software, computer vision, and runtime systems. My current work extends that approach into machine-learning evaluation, embedded execution, concurrency, tracing, and AI-assisted engineering.
 
-[Website](https://www.jasoneplumb.com/) · [LinkedIn](https://www.linkedin.com/in/jasoneplumb/) · [Resume](https://www.jasoneplumb.com/resume.pdf)
+[Website](https://www.jasoneplumb.com/) · [LinkedIn](https://www.linkedin.com/in/jasoneplumb/)
 
 ## Performance and inference-relevant work
 
@@ -30,6 +30,15 @@ Production TypeScript PWA for trail navigation and map exploration, with offline
 ### [Execution Authority Control Loop](https://github.com/jasoneplumb/exe-auth-ctrl-loop)
 Deterministic host-owned control for AI-initiated effects, with policy applied outside the models. [Paper / DOI](https://doi.org/10.5281/zenodo.21894658).
 
+## Engineering approach
+
+1. Freeze a representative workload and correctness check.
+2. Define the latency or throughput boundary precisely.
+3. Instrument enough of the pipeline to explain the baseline.
+4. Distinguish compute, memory, synchronization, and data-movement limits.
+5. Optimize the measured bottleneck rather than the most interesting code.
+6. Rerun the same workload and correctness checks after each material change.
+   
 ## Earlier systems work
 
 At Intel, I worked across:
@@ -39,13 +48,10 @@ At Intel, I worked across:
 - Pre-silicon firmware, emulation, SDKs, host/device messaging, lock-free scheduling, and OpenCL simulation for Larrabee
 - Camera-driven spatial computing, 3D graphics, and technology standardized as ECMA-363 Universal 3D
 
-I hold eight US patents across six inventions, including **Portable Virtual Reality (US 7,113,618)**, **Augmented Reality System (US 7,301,547)**, and **Relational Modeling for Performance Analysis of Multi-Core Processors (US 8,826,234)**.
-
-## Engineering approach
-
-1. Freeze a representative workload and correctness check.
-2. Define the latency or throughput boundary precisely.
-3. Instrument enough of the pipeline to explain the baseline.
-4. Distinguish compute, memory, synchronization, and data-movement limits.
-5. Optimize the measured bottleneck rather than the most interesting code.
-6. Rerun the same workload and correctness checks after each material change.
+Patents:
+_ **US 6771841: Determining a bounding shape for a collection of points**
+- **US 6927757: Camera driven virtual workspace management**
+- **US 6975328, 7098925, 7245305: Shading of images using texture**
+- **US 7113618: Portable Virtual Reality**
+- **US 7301547: Augmented Reality System**
+- **US 8826234: Relational Modeling for Performance Analysis of Multi-Core Processors**
