@@ -11,7 +11,7 @@ Across 26 years at Intel, I worked on GPU performance tooling, low-overhead inst
 ## Performance and inference-relevant work
 
 ### [cyclescope](https://github.com/jasoneplumb/cyclescope) — low-overhead C++ tracing
-C++20 scope/function tracing with per-thread bounded buffers, Perfetto-compatible output, ThreadSanitizer coverage, and explicit overhead benchmarks against untraced twins.
+C++20 scope/function tracing with per-thread bounded buffers, Perfetto-compatible output, ThreadSanitizer coverage, and explicit overhead benchmarks against an untraced twin.
 
 ### [taskloom](https://github.com/jasoneplumb/taskloom) — concurrency and runtime primitives
 Header-only C++20 building blocks centered on a Chase-Lev work-stealing deque, plus dependency events, streaming statistics, false-sharing isolation, and low-level hardware helpers with explicit memory-ordering contracts.
@@ -44,7 +44,7 @@ Deterministic host-owned control for AI-initiated effects, with policy applied o
 At Intel, I worked across:
 
 - Performance analysis and observability: timeline visualization, tracing, sampling, compiler-assisted instrumentation, ETW, symbolic stacks, DXR, and GPU memory analysis
-- RealSense firmware, SDK/API design, sensor pipelines, IMU capability, and 3D scanning workflows
+- RealSense(TM) firmware, SDK/API design, sensor pipelines, IMU capability, and 3D scanning workflows
 - Pre-silicon firmware, emulation, SDKs, host/device messaging, lock-free scheduling, and OpenCL simulation for Larrabee
 - Camera-driven spatial computing, 3D graphics, and technology standardized as ECMA-363 Universal 3D
 
