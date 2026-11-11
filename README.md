@@ -44,7 +44,7 @@ Deterministic host-owned control for AI-initiated effects, with policy applied o
 At Intel, I worked across:
 
 - Performance analysis and observability: timeline visualization, tracing, sampling, compiler-assisted instrumentation, ETW, symbolic stacks, DXR, and GPU memory analysis
-- RealSense(TM) firmware, SDK/API design, sensor pipelines, IMU capability, and 3D scanning workflows
+- Intel(R) RealSense(TM) firmware, SDK/API design, sensor pipelines, IMU capability, and 3D scanning workflows
 - Pre-silicon firmware, emulation, SDKs, host/device messaging, lock-free scheduling, and OpenCL simulation for Larrabee
 - Camera-driven spatial computing, 3D graphics, and technology standardized as ECMA-363 Universal 3D
 
