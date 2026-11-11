@@ -49,7 +49,8 @@ At Intel, I worked across:
 - Camera-driven spatial computing, 3D graphics, and technology standardized as ECMA-363 Universal 3D
 
 Patents:
-_ **US 6771841: Determining a bounding shape for a collection of points**
+
+- **US 6771841: Determining a bounding shape for a collection of points**
 - **US 6927757: Camera driven virtual workspace management**
 - **US 6975328, 7098925, 7245305: Shading of images using texture**
 - **US 7113618: Portable Virtual Reality**
