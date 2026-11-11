@@ -1,7 +1,5 @@
 # Jason E. Plumb
 
-**Systems & Performance Architect · Edge AI · Embedded Systems · Computer Vision**
-
 I work on performance-sensitive systems where the useful question is not just *is it fast?* but *where is the time going, what resource is limiting it, and did the optimization preserve the intended result?*
 
 Across 26 years at Intel, I worked on GPU performance tooling, low-overhead instrumentation, developer platforms, embedded and sensor systems, pre-silicon software, computer vision, and runtime systems. My current work extends that approach into machine-learning evaluation, embedded execution, concurrency, tracing, and AI-assisted engineering.
